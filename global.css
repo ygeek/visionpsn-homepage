@@ -1,0 +1,366 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑",STHeiti,MingLiu,sans-serif;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.head {
+  color: #fff;
+  background: url("images/top/index.jpg");
+  background-size: cover;
+  padding: 166px 0 122px;
+}
+
+.head-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#head-nav {
+  -webkit-transition: all .35s ease-in-out; /* Safari and Chrome */
+  -o-transition: all .35s ease-in-out; /* Opera */
+  transition: all .35s ease-in-out;
+}
+
+.head-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 1px 4px 16px 0 #ebebeb;
+  color: #333;
+}
+
+.head-nav-fixed {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1024px;
+  padding: 20px 46px 19px 40px;
+}
+
+.logo {
+  height: 30px;
+  width: 150px;
+}
+
+.head-nav .logo {
+  background: url("images/logo/whitelogo.png") no-repeat 0 0/150px 30px;
+}
+
+.head-fixed .logo {
+  background: url("images/logo/colorfullogo.png") no-repeat 0 0/150px 30px;
+}
+
+.head-tabs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 9px;
+  flex: 1;
+  font-size: 15.5px;
+}
+
+.head-tab {
+  margin-left: 24px;
+}
+
+.head-tab:hover {
+  cursor: pointer;
+  color: #64cecb;
+}
+
+.head-tab-active {
+  color: #64cecb;
+}
+
+.head-titles {
+  height: 289px;
+  background: linear-gradient(to left, transparent 20%, rgba( 5, 16, 35, 0.5) 50%, transparent 80%);
+  text-align: center;
+}
+
+.dot {
+  vertical-align: middle;
+  margin: 9px;
+}
+
+.head-title-1 {
+  padding-top: 48px;
+  font-size: 64px;
+}
+
+.head-title-2 {
+  margin-top: 11px;
+  font-size: 30px;
+}
+
+.head-title-3 {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 5px 15px;
+  border: 1px solid;
+  font-size: 30px;
+}
+
+.head-title-4 {
+  margin-top: 11px;
+  font-size: 26px;
+}
+
+.head-subtitle {
+  padding-left: 14px;
+  font-size: 25px;
+}
+
+.head-bar {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  max-height: 577px;
+  left: 0;
+  top: 0;
+}
+
+.service-bar {
+  height: 486px;
+  background: url("images/top/service.jpg");
+  background-size: cover;
+}
+
+.us-bar {
+  height: 486px;
+  background: url("images/top/join_aboutus.jpg");
+  background-size: cover;
+}
+
+.main {
+  margin: 0 auto;
+  width: 1024px;
+  line-height: 2;
+}
+
+.product {
+}
+
+.product-title {
+  display: block;
+  margin: 0 auto 46px;
+  padding-top: 96px;
+  height: 61px;
+  width: 267px;
+}
+
+.product-tabs {
+
+}
+
+.product-tab { display: none; }
+
+.product-tab-label {
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-left: -0.25em;
+  width: 252px;
+  border-bottom: 5px solid #e5e5e5;
+  color: #b9bcbb;
+  font-size: 23px;
+  text-align: center;
+}
+
+.product-tab-label:hover {
+  color: #66cecc;
+  cursor: pointer;
+}
+
+.people-tab-label {
+  margin-left: 140px;
+}
+
+.people-tab:checked ~  .people-tab-label,
+.planning-tab:checked ~ .planning-tab-label,
+.management-tab:checked ~ .management-tab-label {
+  color: #66cecc;
+  border-bottom: 5px solid #66cecc;
+}
+
+.product-content {
+  position: relative;
+  padding: ;
+  width: 100%;
+}
+
+.product-tab-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+  transition: all linear 0.1s;
+}
+
+.people-tab:checked ~  .product-content .product-people,
+.planning-tab:checked ~ .product-content .product-planning-index,
+.management-tab:checked ~ .product-content .product-management {
+  position: relative;
+  opacity: 1;
+  -webkit-transition: all ease-out 0.2s 0.1s;
+  -o-transition: all ease-out 0.2s 0.1s;
+  transition: all ease-out 0.2s 0.1s;
+}
+
+.product-people-left, .product-planning-right, .product-planning-index-left, .product-management-left {
+  width: 422px;
+  height: 261px;
+}
+
+.product-people-right, .product-management-right, .product-planning-index-right {
+  padding: 23px 0 0 42px;
+}
+
+.product-people-right-title, .product-planning-left-title, .product-planning-index-right-title, .product-management-right-title {
+  margin-bottom: 7px;
+  color: #333;
+  font-size: 22px;
+}
+
+.product-people-right-list, .product-planning-left-list, .product-planning-index-right-list, .product-management-right-list {
+  font-size: 13px;
+}
+
+.product-people {
+  display: flex;
+  padding: 50px 0 75px 82px;
+}
+
+.product-planning-index {
+  display: flex;
+  padding: 50px 0 75px 82px;
+}
+
+.product-planning {
+  display: flex;
+  padding: 63px 82px 75px 0;
+  justify-content: flex-end;
+}
+
+.product-planning-left {
+  padding: 37px 42px 0 0;
+  text-align: right;
+}
+
+.product-management {
+  display: flex;
+  padding: 63px 0 100px 82px;
+}
+
+.line {
+  border-bottom: 1.5px solid #64cecb;
+  opacity: 0.5;
+  margin: 0 90px;
+}
+
+.efficient {
+  margin-top: 65px;
+  padding-top: 152px;
+  background: url("images/efficienticon/wave.jpg") round #f6f6f9;
+}
+
+.efficient-main {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.efficient-title {
+  display: block;
+  margin: 0 auto 76px;
+  height: 62px;
+  width: 309px;
+}
+
+.efficient-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 76.5px 146px;
+}
+
+.efficient-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 82px;
+  height: 166.5px;
+  color: #333;
+  font-size: 15.5px;
+}
+
+.efficient-card-icon {
+  margin: 17px 16px 20px 15px;
+  height: 92px;
+  width: 92px;
+}
+
+.footer {
+  width: 100%;
+  background: #464f5d;
+}
+
+.footer-content {
+  box-sizing: border-box;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 41px 39px 62px;
+}
+
+.footer-title {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #7b8288;
+}
+
+.footer-title-extra {
+  margin-left: 13px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-subtitle {
+  padding: 10px 0 45px 43px;
+  color: #7b8288;
+  font-size: 18px;
+}
+
+.footer-contact {
+  padding-left: 43px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  padding-left: 43px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.item-icon {
+  margin-right: 5px;
+}
