@@ -684,3 +684,8 @@ body {
   transform: translate(10%, -50%) scale(0.5,0.5);
   z-index: 90;
 }
+
+.home-page-button:hover,
+.button-blue:hover {
+  background: url("assets/button/button-hover.png") no-repeat 0 0/175px 50px;
+}
