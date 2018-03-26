@@ -3,10 +3,10 @@
   font-weight: 100;
   src: local("PingFang SC Thin");
   src:
-    url('./assets/font/PingFangSCThin.eot?#font-spider') format('embedded-opentype'),
-    url('./assets/font/PingFangSCThin.woff') format('woff'),
-    url('./assets/font/PingFangSCThin.ttf') format('truetype'),
-    url('./assets/font/PingFangSCThin.svg') format('svg');
+    /*url('./assets/font/PingFangSCThin.eot?#font-spider') format('embedded-opentype'),*/
+    /*url('./assets/font/PingFangSCThin.woff') format('woff'),*/
+    url('./assets/font/PingFangSCThin.ttf') format('truetype');
+    /*url('./assets/font/PingFangSCThin.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -15,10 +15,10 @@
   src: local("PingFang SC Light");
   font-weight: 300;
   src:
-    url('./assets/font/PingFangSCLight.eot?#font-spider') format('embedded-opentype'),
-    url('./assets/font/PingFangSCLight.woff') format('woff'),
-    url('./assets/font/PingFangSCLight.ttf') format('truetype'),
-    url('./assets/font/PingFangSCLight.svg') format('svg');
+    /*url('./assets/font/PingFangSCLight.eot?#font-spider') format('embedded-opentype'),*/
+    /*url('./assets/font/PingFangSCLight.woff') format('woff'),*/
+    url('./assets/font/PingFangSCLight.ttf') format('truetype');
+    /*url('./assets/font/PingFangSCLight.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -27,10 +27,10 @@
   font-weight: 400;
   src: local("PingFang SC Regular");
   src:
-    url('./assets/font/PingFangSCRegular.eot?#font-spider') format('embedded-opentype'),
-    url('./assets/font/PingFangSCRegular.woff') format('woff'),
-    url('./assets/font/PingFangSCRegular.ttf') format('truetype'),
-    url('./assets/font/PingFangSCRegular.svg') format('svg');
+    /*url('./assets/font/PingFangSCRegular.eot?#font-spider') format('embedded-opentype'),*/
+    /*url('./assets/font/PingFangSCRegular.woff') format('woff'),*/
+    url('./assets/font/PingFangSCRegular.ttf') format('truetype');
+    /*url('./assets/font/PingFangSCRegular.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -39,10 +39,10 @@
   font-weight: 500;
   src: local("PingFang SC Medium");
   src:
-    url('./assets/font/PingFangSCMedium.eot?#font-spider') format('embedded-opentype'),
-    url('./assets/font/PingFangSCMedium.woff') format('woff'),
-    url('./assets/font/PingFangSCMedium.ttf') format('truetype'),
-    url('./assets/font/PingFangSCMedium.svg') format('svg');
+    /*url('./assets/font/PingFangSCMedium.eot?#font-spider') format('embedded-opentype'),*/
+    /*url('./assets/font/PingFangSCMedium.woff') format('woff'),*/
+    url('./assets/font/PingFangSCMedium.ttf') format('truetype');
+    /*url('./assets/font/PingFangSCMedium.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -51,10 +51,10 @@
   font-weight: 700;
   src: local("PingFang SC Semibold");
   src:
-    url('./assets/font/PingFangSCSemibold.eot?#font-spider') format('embedded-opentype'),
-    url('./assets/font/PingFangSCSemibold.woff') format('woff'),
-    url('./assets/font/PingFangSCSemibold.ttf') format('truetype'),
-    url('./assets/font/PingFangSCSemibold.svg') format('svg');
+    /*url('./assets/font/PingFangSCSemibold.eot?#font-spider') format('embedded-opentype'),*/
+    /*url('./assets/font/PingFangSCSemibold.woff') format('woff'),*/
+    url('./assets/font/PingFangSCSemibold.ttf') format('truetype');
+    /*url('./assets/font/PingFangSCSemibold.svg') format('svg');*/
   font-style: normal;
 }
 
