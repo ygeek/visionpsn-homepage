@@ -7,60 +7,94 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="head-fixed">
-      <div class="head-nav-fixed">
-        <div class="logo"></div>
-        <div class="head-tabs">
-          <div class="head-tab" onclick="window.open('./index.html', '_self')">首页</div>
-          <div class="head-tab head-tab-active" onclick="window.open('./service.html', '_self')">服务范畴</div>
-          <div class="head-tab" onclick="window.open('./joinus.html', '_self')">加入我们</div>
-          <div class="head-tab" onclick="window.open('./aboutus.html', '_self')">关于我们</div>
+    <div class="nav-fixed-up" id="head-nav" >
+      <div class="nav-logo"></div>
+      <div class="nav-tabs">
+        <div class="nav-tab" onclick="window.open('./index.html', '_self')">首页</div>
+        <div class="nav-tab nav-tab-active" onclick="window.open('./service.html', '_self')">服务范畴</div>
+        <div class="nav-tab" onclick="window.open('./joinus.html', '_self')">加入我们</div>
+        <div class="nav-tab" onclick="window.open('./aboutus.html', '_self')">关于我们</div>
+      </div>
+    </div>
+    <div class="main-header server-bg" >
+      <div class="main-header-title" >服务范畴</div>
+      <div class="main-header-subtitle" >SERVICE OVERVIEW</div>
+    </div>
+    <div class="main" >
+      <div class="server-item-box" id="a" >
+        <div class="service-item-subtitle" >HUMAN RESOURCE</div>
+        <div class="service-item-title" >核心人力</div>
+        <div class="service-show-box" >
+          <div class="list-wrap" >
+            <ol>
+              <li>以员工为中心，创建多维度员工档案；</li>
+              <li>管理员工在职全周期，自动化处理入职、转正、调更、离职等员工动态; </li>
+              <li>告别纸质化办公，为企业人力资源规范奠定基础；</li>
+              <li>整合关键数据和业务，提升管理效率，为企业人才战略提供支持。</li>
+            </ol>
+          </div>
+          <div class="server-image-a" ></div>
+        </div>
+      </div>
+      <div class="server-item-box" id="b" >
+        <div class="service-item-subtitle" >ORGANIZATION</div>
+        <div class="service-item-title" >组织规划</div>
+        <div class="service-show-box" >
+          <div class="server-image-b" ></div>
+          <div class="list-wrap" >
+            <ol>
+              <li>快速相应组织调整。</li>
+              <li>通过可视化组织结构搭建职位与汇报关系。 </li>
+              <li>快速查询组织，人员职位的详细信息</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="server-item-box" id="c" >
+        <div class="service-item-subtitle" >TIME MANAGEMENT</div>
+        <div class="service-item-title" >时间管理</div>
+        <div class="service-show-box" >
+          <div class="list-wrap" >
+            <ol>
+              <li>依据企业实际需求设置考勤排班规则。</li>
+              <li>支持为不同的假期类别设置个性化的审批流程。</li>
+              <li>自动统计分析，识别异常。</li>
+              <li>透明高效管理员工时间，自动化实现考勤、休假、加班处理。</li>
+              <li>灵活按需配置企业规划，自动排版。</li>
+              <li>时间评估结果与薪资计算自动集成。</li>
+            </ol>
+          </div>
+          <div class="server-image-c" ></div>
         </div>
       </div>
     </div>
-    <div class="service-bar"></div>
-    <div class="main">
-      <img class="product-title" src="images/titles/service.png" alt="服务范畴">
-      <div class="product-people">
-        <img class="product-people-left" src="images/services/people.jpg" alt="核心人力" />
-        <div class="product-people-right">
-          <div class="product-people-right-title">核心人力</div>
-          <div class="product-people-right-list">1. 以员工为中心，创建多纬度员工档案。<br/>2. 管理员工在职全周期，自动化处理入职、转正、调更、离职等员工动态。<br/>3. 告别纸质化办公，为企业人力资源规范管理奠定基础。<br/>4. 整合关键数据和业务，提升管理效率，为企业人才战略提供支持。
-          </div>
+    <div class="footer" >
+      <div class="footer-top" >
+        <div class="footer-right" >
+          <div class="footer-special" >悦视光合科技（大连）有限公司</div>
+          <div class="footer-item" >公司地址：&nbsp 辽宁省大连市沙河口区软件园15号楼501AB</div>
+          <div class="footer-item" >邮箱：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp bd@visionpsn.com</div>
+        </div>
+        <div class="footer-left" >
+          <p class="tel-tille" >
+            <div class="tel-icon" ></div>
+            联系电话
+          </p>
+          <div class="tel-num" >0411-39551681</div>
         </div>
       </div>
-      <div class="line"></div>
-      <div class="product-planning">
-        <div class="product-planning-left">
-          <div class="product-planning-left-title">组织规划</div>
-          <div class="product-planning-left-list">1. 快速响应组织调整。<br/>2. 通过可视化组织结构搭建职位与汇报关系。<br/>3. 快速查询组织，人员职位的详细信息。
-          </div>
-        </div>
-        <img class="product-planning-right" src="images/services/planning.jpg" alt="组织规划" />
-      </div>
-      <div class="line"></div>
-      <div class="product-management">
-        <img class="product-management-left" src="images/services/management.jpg" alt="时间管理" />
-        <div class="product-management-right">
-          <div class="product-management-right-title">时间管理</div>
-          <div class="product-management-right-list">1. 依据企业实际需求设置考勤排班规则。<br/>2. 支持为不同的假勤类别设置个性化的审批流程。<br/>3. 自动统计分析，识别异常。<br/>4. 透明高效管理员工时间，自动化实现考勤、休假、加班处理；<br/>5. 灵活按需配置企业规则，自动排班；<br/>6. 时间评估结果与薪资计算自动集成。
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-title">
-          <img class="logo" src="images/logo/whitelogo.png" alt="悦视光合" />
-          <div class="footer-title-extra">VisionPSN Technology (Dalian) Co., Ltd.</div>
-        </div>
-        <div class="footer-subtitle">互联网时代的人力资源管理软件云服务创新实践者</div>
-        <div class="footer-contact">联系我们</div>
-        <div class="footer-item"><img class="item-icon" src="images/bottom/address.png" alt=""><div class="item-list">辽宁省大连市高新园区软件园路与数码路交叉口软景中心A座703</div></div>
-        <div class="footer-item"><img class="item-icon" src="images/bottom/phone.png" alt=""><div class="item-list">0411-39551681</div></div>
-        <div class="footer-item"><img class="item-icon" src="images/bottom/email.png" alt=""><div class="item-list">bd@visionpsn.com</div></div>
-      </div>
+      <div class="footer-bottom" ></div>
     </div>
   </div>
+  <script type="text/javascript">
+    window.onscroll = function () {
+      var top = document.documentElement.scrollTop || document.body.scrollTop;
+      if (top != 0) {
+        document.getElementById("head-nav").className = "nav-fixed-up-white";
+      } else {
+        document.getElementById("head-nav").className = "nav-fixed-up";
+      }
+    };
+  </script>
 </body>
 </html>

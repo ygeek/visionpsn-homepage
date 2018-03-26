@@ -3,125 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="renderer" content="webkit">
   <title>首页</title>
   <link rel="stylesheet" href="./global.css">
 </head>
 <body>
   <div class="wrap">
-    <div class="head">
-      <div class="head-nav" id="head-nav">
-        <div class="head-nav-fixed">
-          <div class="logo"></div>
-          <div class="head-tabs">
-            <div class="head-tab head-tab-active" onclick="window.open('./index.html', '_self')">首页</div>
-            <div class="head-tab" onclick="window.open('./service.html', '_self')">服务范畴</div>
-            <div class="head-tab" onclick="window.open('./joinus.html', '_self')">加入我们</div>
-            <div class="head-tab" onclick="window.open('./aboutus.html', '_self')">关于我们</div>
-          </div>
-        </div>
-      </div>
-      <div class="head-titles">
-        <div class="head-title-1">悦视光合科技</div>
-        <div class="head-title-2">VisionPSN Technology</div>
-        <div class="head-title-3">更高效<img class="dot" src="images/titles/dot.png" alt="·" />更年轻<img class="dot" src="images/titles/dot.png" alt="·" />更有活力</div>
-        <div class="head-title-4">互联网时代的人力资源管理软件云服务创新实践者</div>
+    <div class="nav-fixed-up" id="head-nav" >
+      <div class="nav-logo"></div>
+      <div class="nav-tabs">
+        <div class="nav-tab nav-tab-active" onclick="window.open('./index.html', '_self')">首页</div>
+        <div class="nav-tab" onclick="window.open('./service.html', '_self')">服务范畴</div>
+        <div class="nav-tab" onclick="window.open('./joinus.html', '_self')">加入我们</div>
+        <div class="nav-tab" onclick="window.open('./aboutus.html', '_self')">关于我们</div>
       </div>
     </div>
-
+    <div class="page-content home-page-bg" id='homePage' >
+      <div class="home-page" >
+        <div class="home-page-title" >悦视光合科技</div>
+        <div class="home-page-subtitle" >VisionPSN Technology</div>
+        <div class="home-page-line" >更高效更年轻更有活力</div>
+        <div class="home-page-line" >互联网时代的人力资源管理软件云服务创新实践者</div>
+        <a class="home-page-button" href="#start" ></a>
+      </div>
+    </div>
     <div class="main">
-      <div class="product">
-        <img class="product-title" src="images/titles/service.png" alt="服务范畴">
-        <div class="product-tabs">
-          <input class="product-tab people-tab" id="people-tab" type="radio" name="radio-set" checked="checked" />
-          <label for="people-tab" class="product-tab-label people-tab-label">核心人力</label>
-          <input class="product-tab planning-tab" id="planning-tab" type="radio" name="radio-set" />
-          <label for="planning-tab" class="product-tab-label planning-tab-label">组织规划</label>
-          <input class="product-tab management-tab" id="management-tab" type="radio" name="radio-set" />
-          <label for="management-tab" class="product-tab-label management-tab-label">时间管理</label>
-          <div class="product-content">
-            <div class="product-tab-content product-people">
-              <img class="product-people-left" src="images/services/people.jpg" alt="核心人力" />
-              <div class="product-people-right">
-                <div class="product-people-right-title">核心人力</div>
-                <div class="product-people-right-list">1. 以员工为中心，创建多纬度员工档案。<br/>2. 管理员工在职全周期，自动化处理入职、转正、调更、离职等员工动态。<br/>3. 告别纸质化办公，为企业人力资源规范管理奠定基础。<br/>4. 整合关键数据和业务，提升管理效率，为企业人才战略提供支持。
-                </div>
-              </div>
-            </div>
-            <div class="product-tab-content product-planning-index">
-              <img class="product-planning-index-left" src="images/services/planning.jpg" alt="组织规划" />
-              <div class="product-planning-index-right">
-                <div class="product-planning-index-right-title">组织规划</div>
-                <div class="product-planning-index-right-list">1. 快速响应组织调整。<br/>2. 通过可视化组织结构搭建职位与汇报关系。<br/>3. 快速查询组织，人员职位的详细信息。
-                </div>
-              </div>
-            </div>
-            <div class="product-tab-content product-management">
-              <img class="product-management-left" src="images/services/management.jpg" alt="时间管理" />
-              <div class="product-management-right">
-                <div class="product-management-right-title">时间管理</div>
-                <div class="product-management-right-list">1. 依据企业实际需求设置考勤排班规则。<br/>2. 支持为不同的假勤类别设置个性化的审批流程。<br/>3. 自动统计分析，识别异常。<br/>4. 透明高效管理员工时间，自动化实现考勤、休假、加班处理；<br/>5. 灵活按需配置企业规则，自动排班；<br/>6. 时间评估结果与薪资计算自动集成。
-                </div>
-              </div>
-            </div>
+      <div class="page-content" id="start" >
+        <div class="page-content-subtitle" >SERVICE OVERVIEW</div>
+        <div class="page-content-title" >服务范畴</div>
+        <div class="service-area-box" >
+          <div class="service-area-items" >
+            <div class="service-area-icon-a" ></div>
+            <div class="service-area-title" >核心人力</div>
+            <div class="service-area-p" >以员工为中心</div>
+            <div class="service-area-p" >创建多维度员工档案</div>
+            <div
+              class="button-blue"
+              onclick="window.open('./service.html#a', '_self')"
+            ></div>
           </div>
+          <div class="service-area-items" >
+            <div class="service-area-icon-b" ></div>
+            <div class="service-area-title" >组织规划</div>
+            <div class="service-area-p" >快速响应</div>
+            <div class="service-area-p" >组织调整</div>
+            <div
+              class="button-blue"
+              onclick="window.open('./service.html#b', '_self')"
+            ></div>
+          </div>
+          <div class="service-area-items" >
+            <div class="service-area-icon-b" ></div>
+            <div class="service-area-title" >时间管理</div>
+            <div class="service-area-p" >依据企业时间需求</div>
+            <div class="service-area-p" >设置考勤排班规则</div>
+            <div
+              class="button-blue"
+              onclick="window.open('./service.html#c', '_self')"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="page-content-subtitle" >EFFICIENCY PROMOTION</div>
+        <div class="page-content-title" >专注提升工作效率</div>
+        <div class="card-stage" >
+          <div class="show-card position-0" id="0" >
+            <div class="card-image-a" ></div>
+            <div class="card-title" >360度绩效评核</div>
+            <div class="card-p" >360度运用特定的标准和指标，对员工的工作行为及取得的工作业绩进行评估。</div>
+          </div>
+          <div class="show-card position-1" id="1" >
+            <div class="card-image-b" ></div>
+            <div class="card-title" >自动化处理考勤</div>
+            <div class="card-p" >统计到报表；异常情况的请假、加班等，都能通过审批关联考勤，数据协同，自动统计。</div>
+          </div>
+          <div class="show-card position-2" id="2" >
+            <div class="card-image-c" ></div>
+            <div class="card-title" >文档文件数字化</div>
+            <div class="card-p" >实现集中部署应用、分级管理、构建立体式企业数字档案馆</div>
+          </div>
+          <div class="show-card position-3" id="3" >
+            <div class="card-image-d" ></div>
+            <div class="card-title" >个性化审批流程</div>
+            <div class="card-p" >降低行政审核的条条框框及人为过多的限制，聚焦于事项的快速达成一致。</div>
+          </div>
+          <div class="show-card position-4" id="4" >
+            <div class="card-image-e" ></div>
+            <div class="card-title" >智能数据统计分析</div>
+            <div class="card-p" >智能数据统计分析在实际使用中充当只能化助手，拥有恰当的信息，作出正确的决定。</div>
+          </div>
+          <div class="show-card position-5" id="5" >
+            <div class="card-image-f" ></div>
+            <div class="card-title" >自定义薪金结构</div>
+            <div class="card-p" >自行定义薪金结构，合理分配组织中各个工种或工作岗位之间薪酬水平的比例关系。</div>
+          </div>
+        </div>
+      </div>
+      <div class="other-page-content" >
+        <div class="other-page" >
+          <div class="other-page-title" >关于我们</div>
+          <div class="other-page-subtitle" >About us</div>
+          <div class="other-page-p" >悦视光合科技（大连）有限公司专注于企业级互联网产品研发及云端服务，创始人均来自百度，网易等一线互联网公司，拥有多年知名互联网产品的设计和研发经验。</div>
+          <div
+            class="button-blue"
+            onclick="window.open('./aboutus.html', '_self')"
+          ></div>
+        </div>
+        <div class="other-page" >
+          <div class="other-page-title" >加入我们</div>
+          <div class="other-page-subtitle" >Join us</div>
+          <div class="other-page-p" >需考量个人兴趣，由于每个行业有不同的行业特征，加入者最好选择和自己志趣相投的行业加入，给自己一次改变世界的机会。</div>
+          <div
+            class="button-blue"
+            onclick="window.open('./joinus.html', '_self')"
+          ></div>
         </div>
       </div>
     </div>
-    <div class="efficient">
-      <div class="efficient-main">
-        <img class="efficient-title" src="images/titles/efficient.png" alt="专注提升工作效率" />
-        <div class="efficient-content">
-          <div class="efficient-card">
-            <img class="efficient-card-icon" src="images/efficienticon/icon1.png"  alt="文档文件数字化" />
-            <div>文档文件数字化</div>
-          </div>
-          <div class="efficient-card">
-            <img class="efficient-card-icon" src="images/efficienticon/icon2.png"  alt="个性化审批流程" />
-            <div>个性化审批流程</div>
-          </div>
-          <div class="efficient-card">
-            <img class="efficient-card-icon" src="images/efficienticon/icon3.png"  alt="自动化处理考勤" />
-            <div>自动化处理考勤</div>
-          </div>
-          <div class="efficient-card">
-            <img class="efficient-card-icon" src="images/efficienticon/icon4.png"  alt="自定义薪资结构" />
-            <div>自定义薪资结构</div>
-          </div>
-          <div class="efficient-card">
-            <img class="efficient-card-icon" src="images/efficienticon/icon5.png"  alt="360度绩效评核" />
-            <div>360度绩效评核</div>
-          </div>
-          <div class="efficient-card">
-            <img class="efficient-card-icon" src="images/efficienticon/icon6.png"  alt="智能数据统计分析" />
-            <div>智能数据统计分析</div>
-          </div>
+    <div class="footer" >
+      <div class="footer-top" >
+        <div class="footer-right" >
+          <div class="footer-special" >悦视光合科技（大连）有限公司</div>
+        <div class="footer-item" >公司地址：&nbsp 辽宁省大连市沙河口区软件园15号楼501AB</div>
+        <div class="footer-item" >邮箱：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp bd@visionpsn.com</div>
+        </div>
+        <div class="footer-left" >
+          <p class="tel-tille" >
+            <div class="tel-icon" ></div>
+            联系电话
+          </p>
+          <div class="tel-num" >0411-39551681</div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-title">
-          <img class="logo" src="images/logo/whitelogo.png" alt="悦视光合" />
-          <div class="footer-title-extra">VisionPSN Technology (Dalian) Co., Ltd.</div>
-        </div>
-        <div class="footer-subtitle">互联网时代的人力资源管理软件云服务创新实践者</div>
-        <div class="footer-contact">联系我们</div>
-        <div class="footer-item"><img class="item-icon" src="images/bottom/address.png" alt=""><div class="item-list">辽宁省大连市高新园区软件园路与数码路交叉口软景中心A座703</div></div>
-        <div class="footer-item"><img class="item-icon" src="images/bottom/phone.png" alt=""><div class="item-list">0411-39551681</div></div>
-        <div class="footer-item"><img class="item-icon" src="images/bottom/email.png" alt=""><div class="item-list">bd@visionpsn.com</div></div>
-      </div>
+      <div class="footer-bottom" ></div>
     </div>
   </div>
   <script type="text/javascript">
     window.onscroll = function () {
       var top = document.documentElement.scrollTop || document.body.scrollTop;
-      console.log('top', top);
       if (top != 0) {
-        document.getElementById("head-nav").className = "head-fixed";
+        document.getElementById("head-nav").className = "nav-fixed-up-white";
       } else {
-        document.getElementById("head-nav").className = "head-nav";
+        document.getElementById("head-nav").className = "nav-fixed-up";
       }
     };
   </script>
+  <script src="./main.js" ></script>
 </body>
 </html>
