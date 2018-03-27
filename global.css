@@ -2,11 +2,6 @@
   font-family: "PingFang SC";
   font-weight: 100;
   src: local("PingFang SC Thin");
-  src:
-    /*url('./assets/font/PingFangSCThin.eot?#font-spider') format('embedded-opentype'),*/
-    /*url('./assets/font/PingFangSCThin.woff') format('woff'),*/
-    url('./assets/font/PingFangSCThin.ttf') format('truetype');
-    /*url('./assets/font/PingFangSCThin.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -14,11 +9,6 @@
   font-family: "PingFang SC";
   src: local("PingFang SC Light");
   font-weight: 300;
-  src:
-    /*url('./assets/font/PingFangSCLight.eot?#font-spider') format('embedded-opentype'),*/
-    /*url('./assets/font/PingFangSCLight.woff') format('woff'),*/
-    url('./assets/font/PingFangSCLight.ttf') format('truetype');
-    /*url('./assets/font/PingFangSCLight.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -26,11 +16,6 @@
   font-family: "PingFang SC";
   font-weight: 400;
   src: local("PingFang SC Regular");
-  src:
-    /*url('./assets/font/PingFangSCRegular.eot?#font-spider') format('embedded-opentype'),*/
-    /*url('./assets/font/PingFangSCRegular.woff') format('woff'),*/
-    url('./assets/font/PingFangSCRegular.ttf') format('truetype');
-    /*url('./assets/font/PingFangSCRegular.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -38,11 +23,6 @@
   font-family: "PingFang SC";
   font-weight: 500;
   src: local("PingFang SC Medium");
-  src:
-    /*url('./assets/font/PingFangSCMedium.eot?#font-spider') format('embedded-opentype'),*/
-    /*url('./assets/font/PingFangSCMedium.woff') format('woff'),*/
-    url('./assets/font/PingFangSCMedium.ttf') format('truetype');
-    /*url('./assets/font/PingFangSCMedium.svg') format('svg');*/
   font-style: normal;
 }
 
@@ -50,30 +30,24 @@
   font-family: "PingFang SC";
   font-weight: 700;
   src: local("PingFang SC Semibold");
-  src:
-    /*url('./assets/font/PingFangSCSemibold.eot?#font-spider') format('embedded-opentype'),*/
-    /*url('./assets/font/PingFangSCSemibold.woff') format('woff'),*/
-    url('./assets/font/PingFangSCSemibold.ttf') format('truetype');
-    /*url('./assets/font/PingFangSCSemibold.svg') format('svg');*/
   font-style: normal;
 }
 
-@font-face {
-  font-family: "PingFang SC";
-  font-weight: 800;
-  src: local("PingFang SC Heavy");
+html {
+  height: 100%;
 }
-
 body {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 
+  overflow-y: scroll;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
-  font-family: "PingFang SC","lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "PingFang SC","Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑",STHeiti,MingLiu,sans-serif;
   font-weight: 300;
 }
 
@@ -83,16 +57,24 @@ body {
   overflow-x: hidden;
 }
 
+#head-nav {
+  transition: all 0.3s;
+}
+
+.nav-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
 .nav-fixed-up,
 .nav-fixed-up-white {
-  min-width: 1200px;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
-  margin: 0;
-  padding: 51px 169px 15px 171px;
+  height: 65px;
 
   box-sizing: border-box;
   z-index: 999;
@@ -100,25 +82,29 @@ body {
 
 .nav-fixed-up-white {
   background-color: #fff;
-  box-shadow: 0px 2px 100px #eee;
+  box-shadow: 0px 1px 14px 0 #ebebeb;
 }
 
 .nav-tabs{
   display: flex;
+  margin-left: 450px;
+
   justify-content: flex-end;
   align-items: center;
-  flex: 1;
 }
 
 .nav-tab {
   margin-left: 66px;
+  margin-top: 22px;
   width: 65px;
   height: 25px;
   text-align: center;
 
+
   color: #9b9b9b;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .nav-tab:hover {
@@ -134,6 +120,7 @@ body {
 .nav-logo {
   width: 182px;
   height: 30px;
+  margin-top: 17px;
 
   background: url("assets/LOGO/LOGO-normal.png") no-repeat 0 0/182px 30px;
 }
@@ -157,6 +144,8 @@ body {
   height: 450px;
   width: 1176px;
   margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
 
   text-align: center;
   color: #000;
@@ -180,6 +169,7 @@ body {
   
   font-size: 24px;
   font-weight: 100;
+  line-height: 40px;
 }
 
 .about-icon {
@@ -187,13 +177,11 @@ body {
   width: 262px;
   height: 32px;
 
-
   background: url("assets/image/wearehere.png") no-repeat 0 0/262px 32px;
-
 }
 
 .about-map {
-  width: 1199px;
+  width: 1099px;
   height: 345px;
   margin: 142px auto 80px auto;
 
@@ -239,7 +227,7 @@ body {
 
 .page-content {
   width: 100%;
-  height: 100vh;
+  height: 800px;
   padding-top: 81px;
 
   background-color: #fff;
@@ -289,12 +277,14 @@ body {
 }
 
 .service-area-p {
+  margin-top: 5px;
+
   font-size: 20px;
   color: #9b9b9b;
 }
 
 .service-area-title {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
 
   font-size: 26px;
   color: #6f9ef8;
@@ -321,6 +311,10 @@ body {
 }
 
 .home-page-bg {
+  overflow: hidden;
+  height: 100vh;
+  box-sizing: border-box;
+
   background: url("assets/banner/home-page-background.jpg") no-repeat 0 0/100vw 110vh;
   background-position: center;
   background-size: cover;
@@ -330,6 +324,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding-top: 12%;
+  padding-left: 50px;
 
 
   color: #fff;
@@ -355,7 +350,6 @@ body {
   font-size: 20px;
   margin-bottom: 18px;
   font-weight: 400;
-
 }
 
 .home-page-button {
@@ -370,7 +364,8 @@ body {
 .button-blue {
   width: 175px;
   height: 50px;
-  margin-top: 72px;
+  margin-top: 22px;
+  cursor: pointer;
 
   background: url("assets/button/button-blue.png") no-repeat 0 0/175px 50px;
 }
@@ -380,10 +375,12 @@ body {
   width: 1200px;
   height: 500px;
   margin: 0 auto;
+  padding: 180px 50px 0 50px;
+  box-sizing: border-box;
 
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .other-page {
@@ -400,15 +397,15 @@ body {
   margin-bottom: 39px;
 
   font-size: 20px;
-  font-weight: 100;
-  color: #9b9b9b;
+  font-weight: 300;
 }
 
 .other-page-p {
+  height: 110px;
+
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 25px;
-  color: #9b9b9b;
 }
 
 .footer {
@@ -422,6 +419,8 @@ body {
   width: 1200px;
   height: 150px;
   margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
 
   flex-direction: row;
   justify-content: space-between;
@@ -494,30 +493,30 @@ body {
   padding: 37px 46px 39px 45px;
   margin-bottom: 100px;
   
-  box-shadow: 4px 4px 50px 5px #eee;
+  box-shadow: 4px 4px 14px 1px #ebebeb;
 }
 
 .card-item-title {
   margin-bottom: 35px;
+  padding-left: 20px;
 
   font-size: 20px;
   color: #78a4f9;
-}
+  vertical-align: middle;
 
-.card-item-title span {
-  font-size: 40px;
-  font-weight: 300;
+  background: url("assets/icon/point.png") no-repeat 0 50%/10px 10px;
 }
 
 .card-item-content li {
   margin-bottom: 11px;
 
   font-weight: 100;
+  line-height: 20px;
 }
 
 .card-item-content span {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 300;
 
   margin-bottom: 11px;
   margin-left: -8px;
@@ -576,15 +575,20 @@ body {
 
 .list-wrap {
   display: flex;
-  text-align: left;
   margin: 0 37px;
   width: 400px;
 
   font-size: 20px;
+  text-align: left;
+}
+
+.list-wrap ol {
+  margin-top: 0;
 }
 
 .list-wrap li {
   margin-bottom: 48px;
+  line-height: 30px;
 }
 
 .card-image-a,
@@ -636,8 +640,13 @@ body {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 4px 4px 50px 5px #eee;
+  box-shadow: 4px 4px 14px 1px #ebebeb;
   background-color: #fff;
+  cursor: pointer;
+}
+
+.show-card:hover {
+  box-shadow: 4px 4px 15px 1px #cbcbcb;
 }
 
 .card-title {

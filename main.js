@@ -49,7 +49,7 @@ window.onload = function () {
   var card4 = document.getElementById('4');
   var card5 = document.getElementById('5');
 
-  homePage.style = window.screen.height - 100 + 'px';
+  homePage.style.height = document.body.clientHeight + 'px';
 
   card0.onclick = function() {
     cardListion(card0, 0);    
