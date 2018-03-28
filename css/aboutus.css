@@ -1,0 +1,47 @@
+.about-items {
+  height: 450px;
+  width: 1176px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+
+  text-align: center;
+  color: #000;
+}
+
+.about-items-title {
+  margin-top: 24px;
+
+  font-size: 40px;
+}
+
+.about-items-subtitle {
+  margin-top: 79px;
+
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+.about-items-p {
+  margin-top: 137px;
+  
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.about-icon {
+  margin: 225px auto 0 auto;
+  width: 262px;
+  height: 32px;
+
+  background: url("../assets/image/wearehere.png") no-repeat 0 0/262px 32px;
+}
+
+.about-map {
+  width: 1099px;
+  height: 345px;
+  margin: 142px auto 80px auto;
+
+  background: url("../assets/image/map.jpg") no-repeat 0 0/1099px 345px;
+}
