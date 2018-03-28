@@ -1,6 +1,5 @@
 .server-item-box {
-  height: 1000px;
-  padding-top: 79px;
+  padding: 50px 0 100px 0;
 
   text-align: center;
 }
@@ -12,7 +11,7 @@
   color: #9b9b9b;
 }
 .service-item-title {
-  margin-bottom: 203px;
+  margin-bottom: 100px;
 
   font-size: 45px;
   font-weight: 100;
@@ -44,6 +43,7 @@
 
 .service-show-box {
   display: flex;
+
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;

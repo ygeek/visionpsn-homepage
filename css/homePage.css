@@ -65,8 +65,8 @@
 
 .page-content {
   width: 100%;
-  height: 800px;
-  padding-top: 81px;
+  height: 730px;
+  padding-top: 50px;
 
   background-color: #fff;
 }
@@ -93,10 +93,10 @@
 
 .service-area-box {
   display: flex;
+  margin: 100px 0 150px 0;
+
   flex-direction: row;
   justify-content: space-between;
-
-  margin-top: 174px;
 }
 
 .service-area-items {
@@ -178,6 +178,7 @@
 }
 
 .card-stage {
+  margin-top: 50px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -254,9 +255,9 @@
 .other-page-content {
   display: flex;
   width: 1200px;
-  height: 500px;
+  height: 650px;
   margin: 0 auto;
-  padding: 130px 50px 0 50px;
+  padding: 250px 50px 0 50px;
   box-sizing: border-box;
 
   flex-direction: row;
@@ -288,4 +289,8 @@
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
+}
+
+.efficiency {
+  margin-top: 50px;
 }
