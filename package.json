@@ -1,0 +1,11 @@
+{
+  "name": "visionpsn-homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ygeek/visionpsn-homepage.git",
+  "author": "Ethan <940941188@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.3.0"
+  }
+}
