@@ -33,6 +33,7 @@ function setClass(offsets) {
   setCurrentClass(card4, offsets);
   setCurrentClass(card5, offsets);
 }
+
 function cardListion(element, id) {
   var currentIndex = element.classList[1].split('-')[1];
   if (currentIndex != 2) {
@@ -40,16 +41,24 @@ function cardListion(element, id) {
   }
 }
 
-window.onload = function () {
+function changeHomePageHeight() {
   var homePage = document.getElementById('homePage');
+  if (homePage) {
+    homePage.style.height = document.body.clientHeight + 'px';
+  }
+};
+
+window.onresize = changeHomePageHeight;
+
+window.onload = function () {
+  changeHomePageHeight();
+
   var card0 = document.getElementById('0');
   var card1 = document.getElementById('1');
   var card2 = document.getElementById('2');
   var card3 = document.getElementById('3');
   var card4 = document.getElementById('4');
   var card5 = document.getElementById('5');
-
-  homePage.style.height = document.body.clientHeight + 'px';
 
   card0.onclick = function() {
     cardListion(card0, 0);    
