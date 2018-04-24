@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = [
   {
@@ -31,7 +32,8 @@ module.exports = [
                 options: {
                   minimize: true
                 }
-              }
+              },
+              'postcss-loader'
             ]
           })
         },
@@ -73,7 +75,8 @@ module.exports = [
         chunks: ['global', 'aboutus'],
         filename: 'aboutus.html',
         template: './src/aboutus.html'
-      })
+      }),
+      new UglifyJsPlugin()
     ]
   }
 ];
