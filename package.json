@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "postbuild": "sudo sh ./clearn-html-import.sh && rm -f ./dist/[^m]*.js"
   },
   "name": "visionpsn-homepage",
   "version": "1.0.0",
